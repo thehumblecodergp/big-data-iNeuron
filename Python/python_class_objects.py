@@ -15,7 +15,3 @@ class Employee:
 
 emp1 = Employee("Gourav", 89000)
 emp1.displayEmployeeInfo()
-
-
-## Diff bet. class varaible and instance variable
-# https://www.geeksforgeeks.org/difference-between-instance-variable-and-class-variable/
