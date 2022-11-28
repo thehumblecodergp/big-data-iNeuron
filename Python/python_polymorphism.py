@@ -1,4 +1,4 @@
-# Function
+# Function overriding
 
 from math import pi
 
