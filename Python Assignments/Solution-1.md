@@ -222,4 +222,3 @@ $            break
 $        ans.append(num)
 $
 $print(ans)
-
