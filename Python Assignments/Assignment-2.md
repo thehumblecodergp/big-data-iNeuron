@@ -149,7 +149,7 @@ Q53. What is union() in sets? Explain via code.
 
 Q54. What is intersection() in sets? Explain via code.
 
-Q55. What is dictionary ibn Python?
+Q55. What is dictionary in Python?
 
 Q56. How is dictionary different from all other data structures.
 

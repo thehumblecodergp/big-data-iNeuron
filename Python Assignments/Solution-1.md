@@ -54,9 +54,12 @@ print(y)
 
 Using split():
 
-$a, b = input("Enter two of your lucky number: ").split() 
-$print("First lucky number is: ", a) 
-$print("Second lucky number is: ", b) 
+```
+a, b = input("Enter two of your lucky number: ").split() 
+print("First lucky number is: ", a) 
+print("Second lucky number is: ", b) 
+
+```
 
 
 Output:
@@ -66,9 +69,12 @@ Second lucky number is: 1
 
 using map():
 
-$x, y = map(int, input("Enter two values: ").split())
-$print("First Number is: ", x) 
-$print("Second Number is: ", y)
+```
+x, y = map(int, input("Enter two values: ").split())
+print("First Number is: ", x) 
+print("Second Number is: ", y)
+
+```
 
 
 Output:
@@ -78,9 +84,12 @@ Second Number is: 1
 
 using List Comprehension
 
-$x, y = [x for x in input("Enter your name and age: ").split(",")]
-$print("Your name is: ", x) 
-$print("Your age is: ", y)
+```
+x, y = [x for x in input("Enter your name and age: ").split(",")]
+print("Your name is: ", x) 
+print("Your age is: ", y)
+
+```
 
 
 Output:
@@ -114,11 +123,15 @@ $str = "iNeuron"
 $print(str*4)
 
 17. 
-$num = int(input("Please Enter the number to be checked."))
-$if num % 2 == 0:
-$   print("The number is even.")
-$else:
-$   print("The number is odd.")
+
+```
+num = int(input("Please Enter the number to be checked."))
+if num % 2 == 0:
+   print("The number is even.")
+else:
+   print("The number is odd.")
+
+```
 
 18. Boolean Operators are simple words (AND, OR, NOT or AND NOT) used as conjunctions to combine or exclude keywords in a search, resulting in more focused and productive results.
 
@@ -132,7 +145,10 @@ True and False and True = FALSE
 
 1 or 0 or 0 = TRUE
 
-20. Python supports the usual logical conditions from mathematics:
+```
+
+20. 
+Python supports the usual logical conditions from mathematics:
 
     Equals: a == b
     Not Equals: a != b
@@ -145,80 +161,104 @@ These conditions can be used in several ways, most commonly in "if statements" a
 
 21. The if/elif/else structure is a common way to control the flow of a program, allowing you to execute specific blocks of code depending on the value of some data.
 
---> if statement: If the condition following the keyword if evaluates as true, the block of code will execute. Note that parentheses are not used before and after the condition check as in other languages.
+if statement: If the condition following the keyword if evaluates as true, the block of code will execute. Note that parentheses are not used before and after the condition check as in other languages.
 
-$if True:
-$  print('If block will execute!')
+```
+if True:
+  print('If block will execute!')
 
-$x = 5
+x = 5
 
-$if x > 4:
-$  print("The condition was true!") #this statement executes
+if x > 4:
+  print("The condition was true!") #this statement executes
 
---> else statement:You can optionally add an else response that will execute if the condition is false:
+```
 
-$if not True:
-$  print('If statement will execute!')
-$else:
-$  print('Else statement will execute!')
+else statement:You can optionally add an else response that will execute if the condition is false:
+
+```
+if not True:
+  print('If statement will execute!')
+else:
+  print('Else statement will execute!')
+
+```
 
 Or you can also see this example:
 
-$y = 3
+```
+y = 3
 
-$if y > 4:
-$  print("I won't print!") #this statement does not execute
-$else:
-$  print("The condition wasn't true!") #this statement executes
+if y > 4:
+  print("I won't print!") #this statement does not execute
+else:
+  print("The condition wasn't true!") #this statement executes
+
+```
 
 Note that there is no condition following the else keyword - it catches all situations where the condition was false
 
 
---> elif statement: Multiple conditions can be checked by including one or more elif checks after your initial if statement. Just keep in mind that only one condition will execute:
+elif statement: Multiple conditions can be checked by including one or more elif checks after your initial if statement. Just keep in mind that only one condition will execute:
 
-$z = 7
+```
+z = 7
 
-$if z > 8:
-$  print("I won't print!") #this statement does not execute
-$elif z > 5:
-$  print("I will!") #this statement will execute
-$elif z > 6:
-$  print("I also won't print!") #this statement does not execute
-$else:
-$  print("Neither will I!") #this statement does not execute
+if z > 8:
+  print("I won't print!") #this statement does not execute
+elif z > 5:
+  print("I will!") #this statement will execute
+elif z > 6:
+  print("I also won't print!") #this statement does not execute
+else:
+  print("Neither will I!") #this statement does not execute
+
+```
 
 Note: only the first condition that evaluates as true will execute. Even though z > 6 is true, the if/elif/else block terminates after the first true condition. This means that an else will only execute if none of the conditions were true.
 
 22. 
-$age_of_a_person = int(input("Please enter your age."))
-$if age_of_a_person >= 18:
-$    print("I can vote")
-$else:
-$    print("I can't vote")
+``` 
+age_of_a_person = int(input("Please enter your age."))
+if age_of_a_person >= 18:
+    print("I can vote")
+else:
+    print("I can't vote")
+
+```
 
 23. 
-$numbers = [12, 75, 150, 180, 145, 525, 50]
-$
-$sum_of_evens  = 0
-$for num in numbers:
-$    if(num%2 == 0):
-$        sum_of_evens += num
-$
-$print("The sum of evens in the given list is:", sum_of_evens)
+``` 
+numbers = [12, 75, 150, 180, 145, 525, 50]
 
-24.
-$a, b, c = input("Enter three numbers.").split()
-$print("The maximum of three numbers are:", max(a,b,c))
+sum_of_evens  = 0
+for num in numbers:
+    if(num%2 == 0):
+        sum_of_evens += num
 
-25.
-$numbers = [12, 75, 150, 180, 145, 525, 50]
-$ans = list()
-$for num in numbers:
-$    if(num % 5 == 0):
-$        if(num > 150 and num < 500):
-$            continue
-$        if(num > 500):
-$            break
-$        ans.append(num)
-$
-$print(ans)
+print("The sum of evens in the given list is:", sum_of_evens)
+
+```
+
+24. 
+```
+a, b, c = input("Enter three numbers.").split()
+print("The maximum of three numbers are:", max(a,b,c))
+
+```
+
+25. 
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+ans = list()
+for num in numbers:
+    if(num % 5 == 0):
+        if(num > 150 and num < 500):
+            continue
+        if(num > 500):
+            break
+        ans.append(num)
+
+print(ans)
+
+```
