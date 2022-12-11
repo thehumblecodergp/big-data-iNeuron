@@ -499,4 +499,315 @@ Output:
 
 ```
 59. 
+```
+dict = {'key1': 'geeks', 'key2': 'for'}
+print("Current Dict is: ", dict)
 
+# using the subscript notation
+# Dictionary_Name[New_Key_Name] = New_Key_Value
+
+dict['key3'] = 'geeks'
+print("Updated Dict is:", dict)
+
+```
+
+60. 
+
+```
+dict = {}
+dict['name'] = "abc"
+dict['age'] = 13
+dict['skills'] = ["C/C++", "Python", "ReactJS", "Material UI", "Redux", "Golang"]
+dict['states_visited'] = ["Goa", "TN", "UP","Bihar","Jharkhand","Kerala","Karnataka","Haryana","Delhi"]
+
+for key, value in dict.items():
+    print("Key = ", key, "and corresponding Value is: ", value)
+
+```
+
+61. 
+```
+dict = {}
+dict['name'] = "abc"
+dict['age'] = 13
+dict['dict2'] = {"Front-end tech stacks": ["JavaScript", "TypeScript"], "Back-end tech stacks": ["Golang", "Java"]}
+dict['states_visited'] = ["Goa", "TN", "UP","Bihar","Jharkhand","Kerala","Karnataka","Haryana","Delhi"]
+
+for key, value in dict.items():
+    if key == 'dict2':
+        nested_dict = dict[key]
+
+for key, value in nested_dict.items():
+    print("Nested Key is", key, "and the Corresponding value is", value)
+
+
+```
+
+62. The get() method returns the value of the item with the specified key.
+Syntax
+    dictionary.get(keyname, value)
+Example:
+```
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.get("price", 15000)
+
+print(x)
+
+```
+
+
+63. The items() method returns a view object. The view object contains the key-value pairs of the dictionary, as tuples in a list.
+
+The view object will reflect any changes done to the dictionary, see example below.
+Syntax:
+    dictionary.items()
+Example:
+```
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.items()
+
+car["year"] = 2018
+
+print(x) 
+
+# Note: When an item in the dictionary changes value, the view object also gets updated.
+
+```
+
+
+64. The pop() method removes the element at the specified position.
+Syntax:
+    list.pop(pos)
+Example:
+```
+fruits = ['apple', 'banana', 'cherry']
+x = fruits.pop(1) 
+
+# Note: pop() returns the removed element.
+
+```
+
+65. The popitem() method removes the item that was last inserted into the dictionary. In versions before 3.7, the popitem() method removes a random item.
+Syntax:
+    dictionary.popitem()
+
+Example:
+```
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.popitem()
+
+print(x) 
+
+# Note: Returns the last item inserted in the dict. In this case it is "('year', 1964)".
+
+```
+
+66. The keys() method returns a view object. The view object contains the keys of the dictionary, as a list.
+Syntax:
+    dictionary.keys()
+
+Example:
+
+```
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.keys()
+
+car["color"] = "white"
+
+print(x) 
+
+# Note: When an item is added in the dictionary, the view object also gets updated.
+
+```
+
+67. The values() method returns a view object. The view object contains the values of the dictionary, as a list
+Syntax:
+    dictionary.values()
+
+Example:
+```
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.values()
+
+car["year"] = 2018
+
+print(x) 
+
+# Note: When a values is changed in the dictionary, the view object also gets updated.
+
+```
+
+68. Looping means repeating something over and over until a particular condition is satisfied. A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied. Such a type of statement is also known as an iterative statement.
+
+69. There are two types of loops in python.
+    1. In python, a while loop is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed.
+        Syntax :
+            while expression:
+                statement(s)
+
+        Example:
+        ```
+            # Python program to illustrate
+            # while loop
+            count = 0
+            while (count < 3):   
+                count = count + 1
+                print("Hello Geek")
+        ```
+ 
+    2. For loops are used for sequential traversal. For example: traversing a list or string or array etc. In Python, there is no C style for loop, i.e., for (i=0; i<n; i++). There is “for in” loop which is similar to for each loop in other languages. Let us learn how to use for in loop for sequential traversals.
+
+        Syntax:
+            for iterator_var in sequence:
+                statements(s)
+
+    It can be used to iterate over a range and iterators.
+
+        Example:
+        ```
+            # Python program to illustrate
+            # Iterating over range 0 to n-1
+             
+            n = 4
+            for i in range(0, n):
+                print(i)
+        ```
+
+
+70. 
+The for loop is used when we already know the number of iterations, which means when we know how many times a statement has to be executed. That is why we have to specify the ending point in the for loop initialization. When we need to end the loop on a condition other than the number of times, we use a while loop.
+
+71. Python Continue statement is a loop control statement that forces to execute the next iteration of the loop while skipping the rest of the code inside the loop for the current iteration only, i.e. when the continue statement is executed in the loop, the code inside the loop following the continue statement will be skipped for the current iteration and the next iteration of the loop will begin.
+
+Syntax:
+    while True:
+        ...
+        if x == 10:
+            continue
+        print(x)
+
+Example:
+    ```
+    for var in "Geeksforgeeks":
+        if var == "e":
+            continue
+        print(var)
+    ```
+
+72. Python break is used to terminate the execution of the loop. 
+Syntax:
+    Loop{
+        Condition:
+            break
+        }
+Example:
+    ```
+    for i in range(10):
+        print(i)
+        if i == 2:
+            break
+    ```
+
+73. The pass statement is used as a placeholder for future code. When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed. Empty code is not allowed in loops, function definitions, class definitions, or in if statements.
+
+74. The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+
+Syntax:
+range(start, stop, step)
+
+Example 1:
+```
+x = range(3, 6)
+for n in x:
+  print(n)
+```
+
+Example 2:
+```
+x = range(3, 20, 2)
+for n in x:
+  print(n) 
+```
+
+75. 
+Looping through the keys:
+```
+for x in thisdict:
+  print(x)
+```
+
+Looping through the values:
+```
+for x in thisdict:
+  print(x)
+```
+
+Looping through the key value pairs:
+```
+for key, value in thisdict.items():
+  print(key, value) 
+```
+
+### Coding problems
+76. 
+```
+def factorial(num):
+    res = 1;
+    for i in range (1, num+1):
+        res = res * i
+    return res;
+
+num = int(input("Please enter the number."))
+print(factorial(num))
+```
+
+77. 
+```
+def simple_interest(P, R, T):
+    return P*R*T/100
+
+P = float(input("Please enter the principal."))
+R = float(input("Enter the rate of interest."))
+T = float(input("Enter the time you want to invest you money for."))
+
+print("The simple interest on your principal is:", simple_interest(P, R, T))
+```
+
+78. 
+```
+def compound_interest(P, R, T):
+    return P*((1+(R/100))**T) - P
+
+P = float(input("Please enter the principal."))
+R = float(input("Enter the rate of interest."))
+T = float(input("Enter the time you want to invest you money for."))
+
+print("The compound interest on your principal is:", compound_interest(P, R, T))
+```
+
+79. 
