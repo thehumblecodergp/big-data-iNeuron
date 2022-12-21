@@ -811,3 +811,117 @@ print("The compound interest on your principal is:", compound_interest(P, R, T))
 ```
 
 79. 
+```
+# Check Prime
+import math
+def isPrime(n):
+    if (n == 0 or n == 1):
+        print("The number is niether prime nor composite.")
+        return
+    flag = True
+    for i in range (2, int(math.sqrt(n) + 1)):
+        if(n % i == 0):
+            flag = False
+            break
+    
+    if(flag):
+        print("The number is Prime.")
+    else:
+        print("The number is Composite.")
+
+```
+
+80. 
+```
+def isArmstrong(n):
+    num = n
+    sum = 0
+    while(n):
+        rem = n % 10
+        sum += rem**3
+        n = n // 10
+    if (sum == num):
+        print("The number is Armstrong.")
+    else:
+        print("The number is not Armstrong.")
+
+```
+
+81. 
+```
+def Fibbonacci(n):
+    if ( n == 1 or n == 2):
+        return 1
+    a = 1
+    b = 1
+    c = 0
+
+    for i in range(3, n+1):
+        c = a + b;
+        a = b;
+        b = c;
+    
+    return c;
+
+```
+
+82. 
+```
+list_of_nums = [1,2,3,4,5,6,7,8,9]
+# Using Swapping technique
+num = list_of_nums[0]
+list_of_nums[0] = list_of_nums[-1]
+list_of_nums[-1] = num
+
+print(list_of_nums)
+
+```
+
+83. 
+```
+list_of_nums = [1,2,3,4,5,6,7,8,9]
+# Let the two indices be 2 and 5
+num = list_of_nums[2]
+list_of_nums[2] = list_of_nums[5]
+list_of_nums[5] = num
+
+print(list_of_nums)
+
+```
+
+84. 
+```
+list_of_nums = [6,1,2,3,4,5,7,8,9]
+list_of_nums.sort()
+# Lets say we want 5th largest element.
+print(list_of_nums[5-1])
+
+```
+
+85. 
+```
+list_of_nums = [6,1,2,3,4,5,7,8,9]
+list_of_cumulative_sums = list()
+list_of_cumulative_sums.append(list_of_nums[0])
+for i in range (1, len(list_of_nums)):
+    list_of_cumulative_sums.append(list_of_cumulative_sums[i-1] + list_of_nums[i])
+print(list_of_cumulative_sums)
+
+```
+
+86. 
+```
+str = "TATA"
+str_rev = str[::-1]
+
+if(str == str_rev):
+    print("The string is pallindrome.")
+else:
+    print("The string is not pallindrome.")
+
+```
+
+87. 
+```
+
+```
