@@ -924,4 +924,177 @@ else:
 87. 
 ```
 
+
+```
+
+88. 
+```
+
+```
+
+89. 
+```
+
+```
+
+90. 
+```
+# Since set() contains unique values we use set as data structure to recieve our goal.
+
+given_dict = {"name": "abc", "age": 26, "address": "WB"}
+set_of_unique_values = set()
+
+for v in given_dict.values():
+    set_of_unique_values.add(v)
+
+print(set_of_unique_values)
+```
+
+91. 
+```
+def Merge(dict1, dict2):
+    res = {**dict1, **dict2}
+
+    return res
+
+dict1 = {"name": "abc", "age": 26, "address": "WB"}
+dict2 = {"job": "SDE", "city": "KOAA"}
+
+print(Merge(dict1, dict2))
+
+```
+
+92. 
+```
+# List of tuples to dictionary
+# Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+# Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
+
+def Merge(dict1, dict2):
+    res = {**dict1, **dict2}
+    return res
+
+given_list = [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+res = {}
+for ele in given_list:
+    dict1 = {}
+    dict1[ele[0]] = ele[1]
+    res = Merge(res, dict1)
+
+print(res)
+
+```
+
+93. 
+```
+# Input: list = [9, 5, 6]
+# Output: [(9, 729), (5, 125), (6, 216)]
+
+given_list = [9, 5, 6]
+res = []
+for ele in given_list:
+    tuple1 = (ele, ele**3)
+    res.append(tuple1)
+
+print(res)
+
+```
+
+94. 
+```
+# Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
+# Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
+
+test_tuple1 = (7, 2)
+test_tuple2 = (7, 8)
+res = []
+
+for ele1 in test_tuple1:
+    for ele2 in test_tuple2:
+        tuple1 = (ele1, ele2)
+        res.append(tuple1)
+
+for ele1 in test_tuple2:
+    for ele2 in test_tuple1:
+        tuple1 = (ele1, ele2)
+        res.append(tuple1)
+
+print(res)
+
+```
+
+95. 
+```
+def sort_Tuple(tup):
+    tup.sort (key = lambda x : x[1])
+    return tup
+
+tup = [('for', 24), ('Geeks', 8), ('Geeks', 30)]
+print(sort_Tuple(tup))
+
+```
+
+96. 
+```
+def print_stars(n):
+    for i in range (1, n+1):
+        for j in range (1, i + 1):
+            print("*", end=" ")
+        print("\n")
+
+print_stars(5)
+
+```
+97. 
+```
+def print_stars(n):
+    for i in range (1, n+1):
+        for j in range (n, i, -1):
+            print(" ", end=" ")
+        for k in range (1, i+1):
+            print("*", end=" ")
+        print("\n")
+
+print_stars(5)
+
+```
+
+98. 
+```
+def print_stars(n):
+    for i in range (1, n+1):
+        for j in range (n, i, -1):
+            print(" ", end=" ")
+        for k in range (1, i+1):
+            print("*", end="   ")
+        print("\n")
+
+print_stars(5)
+
+```
+
+99. 
+```
+def print_nums(n):
+    for i in range (1, n+1):
+        for j in range (1, i+1):
+            print(j, end=" ")
+        print("\n")
+
+print_nums(5)
+
+```
+
+100. 
+```
+def print_nums(n):
+    num = 65
+    for i in range (1, n+1):
+        for j in range (1, i+1):
+            print(chr(num), end=" ")
+        print("\n")
+        num = num + 1
+
+print_nums(5)
+
 ```
