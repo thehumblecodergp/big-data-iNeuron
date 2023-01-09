@@ -46,4 +46,4 @@ INSERT INTO employee VALUES(3, 'ghi', 304.45, '2021-12-15'),(4, 'jkl', 34.56, '2
 SELECT * from employee;
 
 -- select specific COLUMNS
-SELECT id, name from employee
+SELECT id, name from employee;
