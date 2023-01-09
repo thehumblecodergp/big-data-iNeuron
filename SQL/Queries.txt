@@ -1,0 +1,9 @@
+-- Command to create a Database
+
+CREATE DATABASE test;
+
+-- number of DATABASES
+SHOW DATABASES;
+
+-- Go inside the DATABASE
+USE test;
